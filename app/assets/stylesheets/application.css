@@ -1,0 +1,399 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.main {
+  padding-top: 94px;
+  background-color: #CEE3F6;
+}
+
+.main-inner {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.main-content {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.introduce-inner {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+.introduce-ttl {
+  margin-top: 40px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.introduce-ttl span {
+  color: #c55622;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+
+.introduce-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1024px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.introduce-content {
+  margin: 10px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.introduce-content p {
+  color: #5882FA;
+}
+
+.introduce-content span {
+  color: #333;
+}
+
+.introduce-img {
+  text-align: right;
+}
+
+.introduce-img img {
+  height: 400px;
+  width: 300px;
+}
+
+.price {
+  background-color: #CEE3F6;
+}
+
+.price-inner {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+.price-ttl {
+  margin-top: 40px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.price-ttl span {
+  color: #c55622;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+
+.price-content {
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.price-content h3 {
+  color: red;
+  font-size: 32px;
+}
+
+.price-content p {
+  font-size: 24px;
+}
+
+.price-content ul li {
+  list-style: none;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.performance-inner {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+.performance-ttl {
+  margin-top: 40px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.performance-ttl span {
+  color: #c55622;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+
+.performance-card h2 {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.contact {
+  background-color: #CEE3F6;
+  padding: 44px 220px;
+}
+
+.contact-inner {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+.contact-ttl {
+  margin-top: 40px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.contact-ttl span {
+  color: #c55622;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-form {
+  background-color: #fff;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 40px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+}
+
+.contact-label {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.contact-label span {
+  color: #5882FA;
+}
+
+.contact-input {
+  border: 1px solid #EEFBFB;
+  border-radius: 3px;
+  height: 48px;
+  width: 500px;
+  max-width: 410px;
+  background: #CEE3F6;
+  font-size: 18px;
+}
+
+.contact-textarea {
+  border: 1px solid #EEFBFB;
+  border-radius: 3px;
+  height: 180px;
+  width: 783px;
+  background: #CEE3F6;
+  font-size: 18px;
+}
+
+.contact-btn {
+  width: 155px;
+  height: 37px;
+  background: #5882FA;
+  color: whitesmoke;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  line-height: 37px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20px;
+}
+
+.contact-btn:hover {
+  opacity: 0.5;
+}
+
+.contact-btn:active {
+  position: relative;
+  top: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact .end-message {
+  display: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  color: #5882FA;
+  font-weight: bold;
+}
+
+.contact .false-message {
+  display: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  color: #5882FA;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #A9D0F5;
+  padding: 10px 400px;
+  text-align: center;
+}
+
+footer .footer-ttl {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer .footer-copy ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: distribute;
+  list-style: none;
+  margin: 20px 0;
+}
+
+footer .footer-copy ul li {
+  font-size: 16px;
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #A9D0F5;
+  width: 100%;
+  height: 94px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+}
+
+.header-inner {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo img {
+  height: 47px;
+  width: 47px;
+  border-radius: 10px;
+}
+
+.header-logo h1 {
+  color: white;
+}
+
+.header-ttl {
+  font-style: 24px;
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+.header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  font-weight: bold;
+}
+
+.header-nav ul li {
+  text-align: center;
+  margin-right: 45px;
+}
+
+.header-nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.header-nav ul li a:hover {
+  opacity: 0.5;
+}
+
+.header-nav ul li a:active {
+  position: relative;
+  top: 3px;
+}
+/*# sourceMappingURL=application.css.map */

@@ -1,0 +1,323 @@
+// Place all the styles related to the top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.main {
+  padding-top: 94px;
+  background-color: #CEE3F6;
+
+  &-inner {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  &-content {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+  }
+
+}
+
+.introduce {
+  &-inner {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  &-ttl {
+    margin-top: 40px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+
+    span {
+      color: #c55622;
+      text-align: center;
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+    }
+
+  }
+
+  &-main {
+    display: flex;
+    width: 1024px;
+    justify-content: space-between;
+
+  }
+
+  &-content {
+    margin: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+
+    p {
+      color: #5882FA;
+
+    }
+
+    span {
+      color: #333;
+    }
+  }
+
+  &-img {
+    text-align: right;
+
+    img {
+      height: 400px;
+      width: 300px;
+    }
+
+  }
+}
+
+.price {
+  background-color: #CEE3F6;
+
+  &-inner {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  &-ttl {
+    margin-top: 40px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+
+    span {
+      color: #c55622;
+      text-align: center;
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+
+  &-content {
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+
+    h3 {
+      color: red;
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    ul {
+      li {
+        list-style: none;
+        font-size: 18px;
+        line-height: 2;
+      }
+    }
+  }
+
+}
+
+.performance {
+  &-inner {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  &-ttl {
+    margin-top: 40px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+
+    span {
+      color: #c55622;
+      text-align: center;
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+    }
+
+  }
+
+  &-card {
+    h2 {
+      text-align: center;
+      color: red;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+  }
+
+
+}
+
+.contact {
+  background-color: #CEE3F6;
+  padding: 44px 220px;
+
+  &-inner {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  &-ttl {
+    margin-top: 40px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+
+    span {
+      color: #c55622;
+      text-align: center;
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+
+  &-form {
+    background-color: #fff;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 40px;
+    box-shadow: 0px 3px 6px #00000029;
+  }
+
+  &-label {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+
+    span {
+      color: #5882FA;
+    }
+
+  }
+
+  &-input {
+    border: 1px solid #EEFBFB;
+    border-radius: 3px;
+    height: 48px;
+    width: 500px;
+    max-width: 410px;
+    background: #CEE3F6;
+    font-size: 18px;
+  }
+
+  &-textarea {
+    border: 1px solid #EEFBFB;
+    border-radius: 3px;
+    height: 180px;
+    width: 783px;
+    background: #CEE3F6;
+    font-size: 18px;
+  }
+
+  &-btn {
+    width: 155px;
+    height: 37px;
+    background: #5882FA;
+    color: whitesmoke;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    line-height: 37px;
+    box-shadow: 0px 3px 6px #00000029;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  &-btn:hover {
+    opacity: 0.5;
+  }
+
+  &-btn:active {
+    position: relative;
+    top: 3px;
+    box-shadow: none;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .end-message {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    color: #5882FA;
+    font-weight: bold;
+  }
+
+  .false-message {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    color: #5882FA;
+    font-weight: bold;
+
+
+  }
+
+}
+
+footer {
+  background-color: #A9D0F5;
+  padding: 10px 400px;
+  text-align: center;
+
+  .footer {
+    &-ttl {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    &-copy {
+      ul {
+        display: flex;
+        text-align: center;
+        justify-content: distribute;
+        list-style: none;
+        margin: 20px 0;
+
+        li {
+          font-size: 16px;
+          width: 50%;
+          text-align: center;
+          font-weight: bold;
+
+        }
+      }
+    }
+  }
+
+
+}

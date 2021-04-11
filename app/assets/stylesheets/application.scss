@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "./top/top";
+
+.header {
+  background-color: #A9D0F5;
+  width: 100%;
+  height: 94px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0px 3px 6px #00000029;
+
+  &-inner {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 47px;
+      width: 47px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: white;
+    }
+  }
+
+
+  &-ttl {
+    font-style: 24px;
+    font-weight: bold;
+    margin-left: 16px;
+  }
+
+  &-nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      font-weight: bold;
+
+      li {
+        text-align: center;
+        margin-right: 45px;
+
+        a {
+          color: black;
+          text-decoration: none;
+
+        }
+
+        a:hover {
+          opacity: 0.5;
+        }
+
+        a:active {
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+  }
+}

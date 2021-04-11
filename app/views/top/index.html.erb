@@ -1,0 +1,155 @@
+<section class="main">
+  <div class="main-inner">
+    <h1 class="main-ttl"></h1>
+    <!-- /.main-ttl -->
+    <div class="main-content">
+      <p>Wed製作承ります。</p>
+      <p>お気軽にお問い合わせください。</p>
+      <p>即対応いたします！</p>
+    </div>
+    <!-- /.main-content -->
+  </div>
+  <!-- /.main-inner -->
+</section>
+<!-- /.main -->
+<section class="introduce">
+  <div class="introduce-inner" id="introduce">
+    <h1 class="introduce-ttl" data-aos="zoom-in">自己紹介<span>introduce</span></h1>
+    <!-- /.introduce-ttl -->
+    <div class="introduce-main">
+      <div class="introduce-content" data-aos="fade-up">
+        <p>氏名： <span>千葉裕太 </span></p>
+        <p>生年月日： <span>1996年4月1日</span></p>
+        <p>職歴： <span>営業、総務、総合企画、配送、引っ越し</span></p>
+        <p>言語スキル： <span>HTML、css、Javascript、Ruby</span></p>
+        <p>趣味：<span>フットサル、読書</span></p>
+      </div>
+      <!-- /.introduce-content -->
+      <div class="introduce-img"  data-aos="fade-up"><img src="img/introduce.jpg" alt=""></div>
+      <!-- /.introduce-img -->
+    </div>
+    <!-- /.introduce-main -->
+  </div>
+  <!-- /.introduce-inner -->
+</section>
+<!-- /.introduce -->
+<section class="price">
+  <div class="price-inner" id="price">
+    <h1 class="price-ttl" data-aos="zoom-in">価格<span>price</span></h1>
+    <!-- /.price-ttl -->
+    <div class="price-content">
+      <h3 data-aos="fade-up">【1~5万円】</h3>
+      <p data-aos="fade-up"> こんなあなたにおすすめ</p>
+      <ul data-aos="fade-up">
+        <li>低予算でホームページを作りたい！</li>
+        <li>自分のホームページが欲しい！</li>
+        <li>今のサイトをリニューアルしたい！</li>
+      </ul>
+    </div>
+    <!-- /.price-content -->
+  </div>
+  <!-- /.price-inner -->
+</section>
+<!-- /.price -->
+<section class="performance">
+  <div class="performance-inner" id="performance">
+    <h1 class="performance-ttl" data-aos="zoom-in">実績<span>performance</span></h1>
+    <!-- /.performance-ttl -->
+    <div class="perfomance-main">
+      <div class="performance-card">
+        <h2>実績作成中！！</h2>
+      </div>
+      <!-- /.performance-card -->
+    </div>
+    <!-- /.perfomance-main -->
+  </div>
+  <!-- /.performance-inner -->
+</section>
+<!-- /.performance -->
+<section class="contact">
+  <div class="contact-inner"  id="contact">
+    <h1 class="contact-ttl" data-aos="zoom-in">お問い合わせ<span>contact</span></h1>
+    <!-- /.contact-ttl -->
+    <form id="form" data-aos="fade-up" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSefiWrmnKtuVPNLERD_axHCs3DnlOqavVYZVEaHm7YtGkg-XA/formResponse">
+      <div class="contact-form">
+        <div class="contact-item">
+          <p class="contact-label">
+            お名前<span>（必須）</span>
+          </p>
+          <!-- /.contact-label -->
+          <input type="name" class="contact-input" name="entry.1996214549" required>
+        </div>
+        <!-- /.contact-item -->
+        <div class="contact-item">
+          <p class="contact-label">
+            メールアドレス <span>（必須）</span>
+          </p>
+          <!-- /.contact-label -->
+          <input type="email" class="contact-input" name="entry.807702903" required>
+        </div>
+        <!-- /.contact-item -->
+        <div class="contact-item">
+          <p class="contact-label">
+            お問い合わせ内容<span>（必須）</span>
+          </p>
+          <!-- /.contact-label -->
+          <textarea type="contents" class="contact-textarea" name="entry.626463851" required></textarea>
+        </div>
+        <!-- /.contact-item -->
+        <input type="submit" class="contact-btn center submit-btn" id="js-submit" value="送信する">
+        <p class="end-message">お問い合わせありがとうございました！</p>
+        <p class="false-message">送信失敗です！</p>
+      </div>
+      <!-- /.contact-form -->
+    </form>
+  </div>
+  <!-- /.contact-inner -->
+</section>
+<!-- /.contact -->
+<footer>
+  <h2 class="footer-ttl">My Portfolio</h2>
+  <!-- /.footer-ttl -->
+  <div class="footer-copy">
+    <ul>
+      <li>プライバシーポリシー</li>
+      <li>個人商取引法に基づく表記</li>
+    </ul>
+  </div>
+  <small>©My Portfolio, All Rights Reserved.</small>
+</footer>
+<%= javascript_pack_tag 'top/index' %>
+<script type="text/javascript">
+  //お問い合わせフォームページ移動しないように設定
+    $('#form').submit(function (event) {
+                var formData = $('#form').serialize();
+                $.ajax({
+                  url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSefiWrmnKtuVPNLERD_axHCs3DnlOqavVYZVEaHm7YtGkg-XA/formResponse",
+                  data: formData,
+                  type: "POST",
+                  dataType: "xml",
+                  statusCode: {
+                    0: function () {
+                      $(".end-message").slideDown();
+                      $(".submit-btn").fadeOut();
+                      //window.location.href = "thanks.html";
+                    },
+                    200: function () {
+                      $(".false-message").slideDown();
+                    }
+                  }
+                });
+                event.preventDefault();
+              });
+  
+      //AOS.jsの設定
+         AOS.init()
+      //ページ内リンク調整
+         var headerHeight = 60;//固定ヘッダーの高さを入れる
+      $('[href^="#"]').click(function(){
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top-headerHeight;
+        $("html, body").animate({scrollTop:position}, 1000, "swing");//200はスクロールの移動スピードです
+        return false;
+      });
+</script>

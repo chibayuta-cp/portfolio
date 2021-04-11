@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-logo">
+          <img src="img/logo.jpg" alt="">
+          <h1 class="header-ttl">My Portfolio</h1>
+          <!-- /.header-ttl -->
+        </div>
+        <!-- /.header log -->
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#introduce">自己紹介</a></li>
+            <li><a href="#price">価格</a></li>
+            <li><a href="#performance">実績</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.header-inner -->
+    </header>
+    <%= yield %>
+  </body>
+</html>
