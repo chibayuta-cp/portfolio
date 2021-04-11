@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: portfolio_production
-  username: portfolio
+  database: postgresql
+  username: unicode
+  pool: 5
   password: <%= ENV['PORTFOLIO_DATABASE_PASSWORD'] %>
